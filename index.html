@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechFix Ghana</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <span>🛠️</span>
+          <h2>TechFix Ghana</h2>
+        </div>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#booking">Book</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Reliable Tech Repair & IT Support in Ghana</h1>
+
+          <p>
+            Book trusted technicians for phone repairs, laptop servicing,
+            software troubleshooting and networking support.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn" onclick="scrollToBooking()">
+              Book Technician
+            </button>
+
+            <button class="btn-outline">Learn More</button>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="card stat-card">
+          <h2>500+</h2>
+          <p>Successful Repairs</p>
+        </div>
+
+        <div class="card stat-card">
+          <h2>120+</h2>
+          <p>Verified Technicians</p>
+        </div>
+
+        <div class="card stat-card">
+          <h2>24/7</h2>
+          <p>Customer Support</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="services-grid">
+          <div class="card service-card">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+            />
+
+            <h3>Phone Repair</h3>
+
+            <p>
+              Screen replacement, battery fixes and software troubleshooting.
+            </p>
+          </div>
+
+          <div class="card service-card">
+            <img
+              src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d"
+            />
+
+            <h3>Laptop Repair</h3>
+
+            <p>Hardware repairs, upgrades and virus removal.</p>
+          </div>
+
+          <div class="card service-card">
+            <img
+              src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+            />
+
+            <h3>Networking</h3>
+
+            <p>Router setup, internet troubleshooting and office networking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="container booking-grid">
+        <div class="card">
+          <h2>Book a Technician</h2>
+
+          <form id="bookingForm">
+            <input type="text" id="name" placeholder="Full Name" required />
+
+            <input type="text" id="phone" placeholder="Phone Number" required />
+
+            <input type="text" id="location" placeholder="Location" required />
+
+            <select id="device">
+              <option>Phone</option>
+              <option>Laptop</option>
+              <option>Desktop</option>
+              <option>Router</option>
+            </select>
+
+            <textarea
+              id="issue"
+              rows="4"
+              placeholder="Describe the issue"
+            ></textarea>
+
+            <button type="submit" class="btn">Create Booking</button>
+          </form>
+
+          <div id="bookingResult"></div>
+        </div>
+
+        <div class="card">
+          <h2>Track Booking</h2>
+
+          <input type="text" id="trackInput" placeholder="Enter Booking ID" />
+
+          <button class="btn" onclick="trackBooking()">Track</button>
+
+          <div id="trackResult"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <div class="container">
+        <h2 class="section-title">Our Team</h2>
+
+        <div class="team-grid">
+          <div class="card team-card">
+            <div class="avatar">E</div>
+            <h3>Emmanuel Kidibi</h3>
+            <p>CEO / Project Manager</p>
+          </div>
+
+          <div class="card team-card">
+            <div class="avatar">H</div>
+            <h3>Henry Bryan Dogbey</h3>
+            <p>Operations Manager</p>
+          </div>
+
+          <div class="card team-card">
+            <div class="avatar">K</div>
+            <h3>Kobinah Acquah</h3>
+            <p>Lead Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="card contact-card">
+          <h2>Contact Us</h2>
+
+          <p>Email: e1523574@gmail.com</p>
+
+          <p>Phone: +233 538 076 003</p>
+
+          <p>Location: UPSA, Accra</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="toast"></div>
+
+    <footer>
+      <p>© 2026 TechFix Ghana — Built by Emmanuel Kidibi</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
